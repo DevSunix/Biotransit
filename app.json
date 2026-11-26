@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Biotransit_React",
+    "slug": "Biotransit_React",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "BioTransit usa la cámara para escanear el código QR de la unidad al abordar.",
+        "NSFaceIDUsageDescription": "BioTransit usa Face ID para confirmar tu identidad al reactivar la sesión.",
+        "NSPhotoLibraryUsageDescription": "BioTransit necesita acceso a tus fotos para que puedas elegir una foto de perfil."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.sunixsteam.Biotransit_React"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "BioTransit necesita acceso a tus fotos para que puedas elegir una foto de perfil."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3c077348-4346-406f-8877-e79f8542c98b"
+      }
+    }
+  }
+}
